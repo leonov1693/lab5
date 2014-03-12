@@ -32,7 +32,7 @@ public class StrLine extends Line {
 
     @Override
     public String toString() {
-        return "id=" + getId() + ", " + getName() + "; y=" + getA()
+        return this.getTime() + "; " + "id=" + getId() + ", " + getName() + "; y=" + getA()
                 + "x+" + getB() + "; степень x=" + degree();
     }
 

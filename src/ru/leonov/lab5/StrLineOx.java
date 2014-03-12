@@ -25,7 +25,7 @@ public class StrLineOx extends Line {
 
     @Override
     public String toString() {
-        return "id=" + getId() + ", " + getName() + "; y=" + getA() + "; степень x=" + degree();
+        return this.getTime() + "; " + "id=" + getId() + ", " + getName() + "; y=" + getA() + "; степень x=" + degree();
     }
 
     @Override

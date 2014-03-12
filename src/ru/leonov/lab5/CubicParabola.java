@@ -39,7 +39,7 @@ public class CubicParabola extends Line {
 
     @Override
     public String toString() {
-        return "id=" + getId() + ", " + getName() + "; y=" + getA() + "x^3+" + getB() + "x^2+" + getC() + "x+" + getD() + "; степень x=" + degree();
+        return this.getTime() + "; " + "id=" + getId() + ", " + getName() + "; y=" + getA() + "x^3+" + getB() + "x^2+" + getC() + "x+" + getD() + "; степень x=" + degree();
     }
 
     @Override

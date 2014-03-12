@@ -1,5 +1,9 @@
 package ru.leonov.lab5;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 /**
 Родительский класс(абстрактный) - линия
  */
@@ -14,6 +18,14 @@ public abstract class Line implements MoveOx, MoveOy {
         id = nextId++;
     }
 
+    public String getTime() 
+    {
+	DateFormat dateFormat = new SimpleDateFormat("dd.MM.YYYY HH:mm:ss");
+	Date date = new Date();
+        return dateFormat.format(date);
+    }
+    
+    
     public abstract int degree();
 
     public abstract boolean isBelong(Point p);

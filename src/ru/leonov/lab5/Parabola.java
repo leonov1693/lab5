@@ -33,7 +33,7 @@ public class Parabola extends Line {
 
     @Override
     public String toString() {
-        return "id=" + getId() + ", " + getName() + "; y=" + getA() + "x^2+" + getB() + "x+" + getC() + "; степень x=" + degree();
+        return this.getTime() + "; " + "id=" + getId() + ", " + getName() + "; y=" + getA() + "x^2+" + getB() + "x+" + getC() + "; степень x=" + degree();
     }
 
     @Override
